@@ -1,7 +1,7 @@
 object FormReg: TFormReg
   Left = 0
   Top = 0
-  BorderStyle = bsSingle
+  BorderStyle = bsDialog
   Caption = 'FormReg'
   ClientHeight = 230
   ClientWidth = 354

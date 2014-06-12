@@ -37,7 +37,6 @@ object FormWindowsRegistryOpenerMain: TFormWindowsRegistryOpenerMain
     TabOrder = 0
     ViewStyle = vsReport
     OnDblClick = ListViewRegistryDblClick
-    ExplicitHeight = 233
   end
   object PanelBottom: TPanel
     Left = 0
@@ -46,6 +45,9 @@ object FormWindowsRegistryOpenerMain: TFormWindowsRegistryOpenerMain
     Height = 45
     Align = alBottom
     TabOrder = 1
+    DesignSize = (
+      635
+      45)
     object ButtonReg: TButton
       Left = 8
       Top = 10
@@ -72,6 +74,16 @@ object FormWindowsRegistryOpenerMain: TFormWindowsRegistryOpenerMain
       Caption = #49325#51228
       TabOrder = 2
       OnClick = ButtonDeleteClick
+    end
+    object ButtonWiki: TButton
+      Left = 541
+      Top = 10
+      Width = 75
+      Height = 25
+      Anchors = [akTop, akRight]
+      Caption = 'Wiki'
+      TabOrder = 3
+      OnClick = ButtonWikiClick
     end
   end
 end

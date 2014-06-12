@@ -13,12 +13,14 @@ type
     ButtonReg: TButton;
     ButtonEdit: TButton;
     ButtonDelete: TButton;
+    ButtonWiki: TButton;
     procedure FormCreate(Sender: TObject);
     procedure ButtonRegClick(Sender: TObject);
     procedure ButtonEditClick(Sender: TObject);
     procedure ListViewRegistryDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure ButtonDeleteClick(Sender: TObject);
+    procedure ButtonWikiClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -55,6 +57,7 @@ begin
   FormReg := TFormReg.Create( nil );
 
   try
+    FormReg.Caption := '수정';
     FormReg.LabeledEditName.Text := ListViewRegistry.Selected.Caption;
     FormReg.LabeledEditRegistry.Text := ListViewRegistry.Selected.SubItems[0];
     if FormReg.ShowModal = mrOk then
@@ -74,6 +77,7 @@ begin
   FormReg := TFormReg.Create( nil );
 
   try
+    FormReg.Caption := '등록';
     FormReg.LabeledEditName.Text := '';
     FormReg.LabeledEditRegistry.Text := '';
     if FormReg.ShowModal = mrOk then
@@ -85,6 +89,11 @@ begin
   finally
     FormReg.Free;
   end;
+end;
+
+procedure TFormWindowsRegistryOpenerMain.ButtonWikiClick(Sender: TObject);
+begin
+  ShellExecute( 0, 'open', 'https://github.com/yypbd/WindowsRegistryOpener/wiki', nil, nil, SW_SHOWNORMAL );
 end;
 
 procedure TFormWindowsRegistryOpenerMain.FormClose(Sender: TObject;
