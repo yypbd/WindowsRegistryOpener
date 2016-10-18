@@ -1,4 +1,4 @@
-unit RegForm;
+ï»¿unit RegForm;
 
 interface
 
@@ -53,21 +53,21 @@ procedure TFormReg.ButtonSaveClick(Sender: TObject);
 begin
   if LabeledEditName.Text = '' then
   begin
-    ShowMessage( 'ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä.' );
+    ShowMessage( 'ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”.' );
     LabeledEditName.SetFocus;
     Exit;
   end;
 
   if LabeledEditRegistry.Text = '' then
   begin
-    ShowMessage( '·¹Áö½ºÆ®¸® °æ·Î¸¦ ÀÔ·ÂÇÏ¼¼¿ä.' );
+    ShowMessage( 'ë ˆì§€ìŠ¤íŠ¸ë¦¬ ê²½ë¡œë¥¼ ì…ë ¥í•˜ì„¸ìš”.' );
     LabeledEditRegistry.SetFocus;
     Exit;
   end;
 
   if not ValidateRegistryValue then
   begin
-    ShowMessage( '·¹Áö½ºÆ®¸® °æ·Î°¡ ¿Ã¹Ù¸£Áö ¾Ê½À´Ï´Ù.' );
+    ShowMessage( 'ë ˆì§€ìŠ¤íŠ¸ë¦¬ ê²½ë¡œê°€ ì˜¬ë°”ë¥´ì§€ ì•ŠìŠµë‹ˆë‹¤.' );
     LabeledEditRegistry.SetFocus;
     Exit;
   end;

@@ -1,4 +1,4 @@
-unit DataMgr;
+﻿unit DataMgr;
 
 interface
 

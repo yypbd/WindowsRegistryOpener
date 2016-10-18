@@ -1,4 +1,4 @@
-object FormWindowsRegistryOpenerMain: TFormWindowsRegistryOpenerMain
+﻿object FormWindowsRegistryOpenerMain: TFormWindowsRegistryOpenerMain
   Left = 0
   Top = 0
   Caption = 'FormWindowsRegistryOpenerMain'

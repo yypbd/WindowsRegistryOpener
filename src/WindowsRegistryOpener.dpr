@@ -1,4 +1,4 @@
-program WindowsRegistryOpener;
+﻿program WindowsRegistryOpener;
 
 uses
   Vcl.Forms,

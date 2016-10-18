@@ -1,4 +1,4 @@
-object FormReg: TFormReg
+﻿object FormReg: TFormReg
   Left = 0
   Top = 0
   BorderStyle = bsDialog

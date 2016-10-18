@@ -1,4 +1,4 @@
-unit WindowsRegistryOpenerMainForm;
+Ôªøunit WindowsRegistryOpenerMainForm;
 
 interface
 
@@ -57,7 +57,7 @@ begin
   FormReg := TFormReg.Create( nil );
 
   try
-    FormReg.Caption := 'ºˆ¡§';
+    FormReg.Caption := 'ÏàòÏ†ï';
     FormReg.LabeledEditName.Text := ListViewRegistry.Selected.Caption;
     FormReg.LabeledEditRegistry.Text := ListViewRegistry.Selected.SubItems[0];
     if FormReg.ShowModal = mrOk then
@@ -77,7 +77,7 @@ begin
   FormReg := TFormReg.Create( nil );
 
   try
-    FormReg.Caption := 'µÓ∑œ';
+    FormReg.Caption := 'Îì±Î°ù';
     FormReg.LabeledEditName.Text := '';
     FormReg.LabeledEditRegistry.Text := '';
     if FormReg.ShowModal = mrOk then

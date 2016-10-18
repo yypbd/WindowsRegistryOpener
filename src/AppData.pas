@@ -1,4 +1,4 @@
-unit AppData;
+﻿unit AppData;
 
 interface
 
